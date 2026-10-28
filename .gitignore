@@ -9,7 +9,6 @@ __pycache__/
 
 # ---- third-party snapshots (referenced by URL instead) ----------------------
 _ref_official/
-temp_sense_genCollab.ipynb
 
 # ---- regenerable large data -------------------------------------------------
 # phase-1 raw dumps are reproduced by: ./build/expmul results/phase1
