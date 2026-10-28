@@ -1,5 +1,7 @@
 # 阶段 4：RTL 综合与 area 对比（28 nm 不可得，用 nangate45 45 nm 替代）
 
+[English](README_en.md) | **中文**
+
 ## 0. 一致性检查：两次跑的是不是同一份 Verilog？
 
 | 检查项 | baseline | ExpMul | 结论 |

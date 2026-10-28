@@ -1,5 +1,7 @@
 # 阶段 1：ExpMul 算子实现与误差测试
 
+[English](README_en.md) | **中文**
+
 对应论文 **Alg.3 / Eq.(4)–(9)**：
 `ExpMul(x, V) = e^x · V`，其中 `x ≤ 0`。
 

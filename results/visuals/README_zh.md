@@ -1,5 +1,7 @@
 # 可视化结果索引
 
+[English](README_en.md) | **中文**
+
 四个 `fa_lane` 设计（FP32/BF16 × baseline/ExpMul）在 nangate45 上跑完 ORFS 全流程后的
 所有图像与版图。
 

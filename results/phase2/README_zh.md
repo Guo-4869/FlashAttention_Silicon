@@ -1,5 +1,7 @@
 # 阶段 2：ExpMul 集成进 FlashAttention-2 kernel
 
+[English](README_en.md) | **中文**
+
 对应论文 **Alg.2 / Alg.4 / Eq.(2)(3)(5)**，以及 **Fig.1/Fig.2** 的块并行结构。
 
 ## 1. 实现结构（保证对比公平）

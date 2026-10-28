@@ -1,5 +1,7 @@
 # 阶段 3：GLUE / Flan-T5 精度（每任务 100 条）
 
+[English](README_en.md) | **中文**
+
 ## 1. 方法
 
 把 `T5Attention.forward` 整体替换为 FA2 + ExpMul 的 torch 实现，其它部分（LayerNorm、FFN、
