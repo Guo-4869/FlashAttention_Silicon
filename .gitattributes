@@ -1,0 +1,7 @@
+# keep the repo LF; binary artifacts untouched
+* text=auto eol=lf
+*.png binary
+*.gds binary
+*.pdf binary
+*.tgz binary
+*.webp binary

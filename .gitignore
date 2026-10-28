@@ -1,0 +1,26 @@
+# ---- build output -----------------------------------------------------------
+build/
+*.obj
+*.exe
+*.o
+*.d
+__pycache__/
+*.pyc
+
+# ---- third-party snapshots (referenced by URL instead) ----------------------
+_ref_official/
+temp_sense_genCollab.ipynb
+
+# ---- regenerable large data -------------------------------------------------
+# phase-1 raw dumps are reproduced by: ./build/expmul results/phase1
+results/phase1/expmul_pairs.csv
+results/phase1/expmul_sweep.csv
+# packaged copies of the extracted visual reports / GDS
+results/visuals/orfs_visuals.tgz
+results/visuals/gds/gds.tgz
+
+# ---- editor / OS ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
