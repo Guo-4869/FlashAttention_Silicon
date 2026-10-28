@@ -23,3 +23,6 @@ results/visuals/gds/gds.tgz
 Thumbs.db
 .vscode/
 .idea/
+
+# ---- local reference material (not part of the deliverable) ----
+analog_design_bench.ipynb
