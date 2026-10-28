@@ -12,7 +12,7 @@ visuals/
 ├── layout_compare.png          四个设计 post-route 版图 2×2 对比（含面积/功耗标注）
 ├── stages_fp32_base.png        FP32 baseline 的 placement / congestion / IR-drop / routing
 ├── stages_fp32_exp.png         FP32 ExpMul 同上四个阶段
-├── orfs_visuals.tgz            原始 ORFS 报告包（40 张图）
+├── orfs_visuals.tgz            原始 ORFS 报告包（本地副本，未入库）
 ├── gds/                        四个设计的 6_final.gds（KLayout 可直接打开）
 │   ├── fa_lane_b_top/base/6_final.gds       FP32 baseline  16.1 MB
 │   ├── fa_lane_e_top/base/6_final.gds       FP32 ExpMul     6.8 MB

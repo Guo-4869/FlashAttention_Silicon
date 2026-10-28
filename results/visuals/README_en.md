@@ -12,7 +12,7 @@ visuals/
 ├── layout_compare.png          post-route layouts of the four designs, 2×2, annotated
 ├── stages_fp32_base.png        FP32 baseline: placement / congestion / IR-drop / routing
 ├── stages_fp32_exp.png         FP32 ExpMul: same four stages
-├── orfs_visuals.tgz            raw ORFS report bundle (40 images)
+├── orfs_visuals.tgz            raw ORFS report bundle (local copy, not committed)
 ├── gds/                        the four 6_final.gds files (open with KLayout)
 │   ├── fa_lane_b_top/base/6_final.gds       FP32 baseline  16.1 MB
 │   ├── fa_lane_e_top/base/6_final.gds       FP32 ExpMul     6.8 MB
