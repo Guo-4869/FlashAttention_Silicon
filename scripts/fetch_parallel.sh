@@ -2,7 +2,7 @@
 # Parallel ranged download of model.safetensors from hf-mirror (per-connection
 # throttling is the bottleneck; 16 connections aggregate much better).
 set -u
-D=/home/peng/flashattn_expmul/models/flan-t5-base
+D=$HOME/flashattn_expmul/models/flan-t5-base
 URL=https://hf-mirror.com/google/flan-t5-base/resolve/main/model.safetensors
 cd "$D" || exit 1
 SIZE=$(curl -4 -sIL "$URL" | grep -i '^content-length' | tail -1 | tr -d '\r' | awk '{print $2}')

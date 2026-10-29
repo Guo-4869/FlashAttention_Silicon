@@ -56,7 +56,7 @@ remaining seven tasks.
 ## 4. Reproduction
 
 ```bash
-cd /home/peng/flashattn_expmul
+cd $HOME/flashattn_expmul
 HF_HUB_OFFLINE=1 venv/bin/python t5_glue.py \
     --model models/flan-t5-base --data_dir data/glue --n 100 \
     --variants fp32 fp32_exp fp32_mi bf16 bf16_mi --out results/phase3

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Verify the two lane designs really used different RTL/netlists, and check GDS.
-F=/home/peng/orfs-src/flow
+F=$HOME/orfs-src/flow
 R=$F/results/nangate45
 echo "== source wrappers =="
 grep -h 'fa_lane #' $F/designs/src/fa_lane_b/*.v

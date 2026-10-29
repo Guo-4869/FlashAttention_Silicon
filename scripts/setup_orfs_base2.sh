@@ -2,7 +2,7 @@
 # Re-run the baseline lane under a distinct DESIGN_NAME (results dirs are keyed
 # by DESIGN_NAME, so the two variants must not share it).
 set -eu
-F=/home/peng/orfs-src/flow
+F=$HOME/orfs-src/flow
 SRC="$F/designs/src/fa_lane_b"
 DES="$F/designs/nangate45/fa_lane_b"
 mkdir -p "$SRC" "$DES"

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Gate-level VCD for the bf16 lane designs.
 set -eu
-W=/home/peng/flashattn_expmul
-F=/home/peng/orfs-src/flow
+W=$HOME/flashattn_expmul
+F=$HOME/orfs-src/flow
 LIB=$F/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
 
 python3 "$W/scripts/gen_cell_models.py" "$LIB" "$W/sim/nangate45_cells.v"

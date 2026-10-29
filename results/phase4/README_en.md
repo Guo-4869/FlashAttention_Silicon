@@ -18,7 +18,7 @@ Note: the first attempt used the configurations `fa_lane_top` and `fa_lane_b_top
 18 776 instances — **that run did compare a netlist with itself**. After switching to two
 independent top-level modules and clearing `objects/results`, the fingerprints above were obtained.
 Both designs complete down to `6_final.gds` (KLayout), at
-`/home/peng/orfs-src/flow/results/nangate45/fa_lane_{b,e}_top/base/6_final.gds`.
+`$HOME/orfs-src/flow/results/nangate45/fa_lane_{b,e}_top/base/6_final.gds`.
 
 ## 1. Toolchain and substitution
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Install the fa_lane (D=1 update datapath) designs into ORFS for P&R power.
 set -eu
-RTL=/home/peng/flashattn_expmul/rtl
-F=/home/peng/orfs-src/flow
+RTL=$HOME/flashattn_expmul/rtl
+F=$HOME/orfs-src/flow
 
 for VAR in base exp; do
   if [ "$VAR" = "base" ]; then PP=".VARIANT(0)"; else PP=".VARIANT(1)"; fi

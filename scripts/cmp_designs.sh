@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-S=/home/peng/flashattn_expmul/sim
-F=/home/peng/orfs-src/flow/results/nangate45
+S=$HOME/flashattn_expmul/sim
+F=$HOME/orfs-src/flow/results/nangate45
 echo "== md5 =="
 md5sum $S/fa_lane_top/6_final.v $S/fa_lane_b_top/6_final.v
 echo "== instances =="

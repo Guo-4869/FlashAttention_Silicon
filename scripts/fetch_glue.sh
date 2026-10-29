@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Fetch the GLUE validation parquet files from hf-mirror (no hub access needed).
 set -u
-D=/home/peng/flashattn_expmul/data/glue
+D=$HOME/flashattn_expmul/data/glue
 BASE=https://hf-mirror.com/datasets/nyu-mll/glue/resolve/main
 mkdir -p "$D"
 cd "$D" || exit 1

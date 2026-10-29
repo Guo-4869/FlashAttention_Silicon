@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Finish part_1 with 8 parallel sub-ranges (single connections get throttled).
 set -u
-D=/home/peng/flashattn_expmul/models/flan-t5-base
+D=$HOME/flashattn_expmul/models/flan-t5-base
 cd "$D" || exit 1
 URL=https://hf-mirror.com/google/flan-t5-base/resolve/main/model.safetensors
 pkill -f fetch_finish.sh 2>/dev/null

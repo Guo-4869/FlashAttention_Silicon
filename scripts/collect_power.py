@@ -7,8 +7,8 @@ import json
 import os
 import re
 
-ROOT = "/home/peng/orfs-src/flow/reports/nangate45/fa_lane_top"
-OUT = "/home/peng/flashattn_expmul/results/phase4/power_compare.json"
+ROOT = os.path.expanduser("~/orfs-src/flow/reports/nangate45/fa_lane_top")
+OUT = os.path.expanduser("~/flashattn_expmul/results/phase4/power_compare.json")
 
 
 def parse(tag: str) -> dict:

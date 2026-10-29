@@ -17,7 +17,7 @@
 ORFS 复用了综合结果，导致两边都是 18 776 实例——**那次确实是同一份网表**。
 改成两个独立顶层模块并清空 `objects/results` 后重跑，才得到上表。
 两个设计都完整跑到 `6_final.gds`（KLayout），可在
-`/home/peng/orfs-src/flow/results/nangate45/fa_lane_{b,e}_top/base/6_final.gds` 查看。
+`$HOME/orfs-src/flow/results/nangate45/fa_lane_{b,e}_top/base/6_final.gds` 查看。
 
 ## 1. 工具链与替代说明
 

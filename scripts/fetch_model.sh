@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # fetch flan-t5-base into a local directory (hf-mirror.com; IPv4)
 set -u
-D=/home/peng/flashattn_expmul/models/flan-t5-base
+D=$HOME/flashattn_expmul/models/flan-t5-base
 BASE=https://hf-mirror.com/google/flan-t5-base/resolve/main
 mkdir -p "$D"
 cd "$D" || exit 1

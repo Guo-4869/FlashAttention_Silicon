@@ -2,7 +2,7 @@
 # Finish the stalled model.safetensors download: re-fetch parts 1/5/7 with
 # fresh connections, then concatenate the 16 parts.
 set -u
-D=/home/peng/flashattn_expmul/models/flan-t5-base
+D=$HOME/flashattn_expmul/models/flan-t5-base
 cd "$D" || exit 1
 URL=https://hf-mirror.com/google/flan-t5-base/resolve/main/model.safetensors
 SIZE=990345061

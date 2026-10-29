@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Fresh ExpMul lane design under a distinct DESIGN_NAME (avoids ORFS caching).
 set -eu
-F=/home/peng/orfs-src/flow
-RTL=/home/peng/flashattn_expmul/rtl
+F=$HOME/orfs-src/flow
+RTL=$HOME/flashattn_expmul/rtl
 SRC="$F/designs/src/fa_lane_e"
 DES="$F/designs/nangate45/fa_lane_e"
 rm -rf "$SRC" "$DES"

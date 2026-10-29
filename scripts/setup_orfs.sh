@@ -4,8 +4,8 @@
 #  Creates d=16 baseline / expmul variants (nangate45, 500 MHz target).
 # ============================================================================
 set -eu
-RTL=/home/peng/flashattn_expmul/rtl
-F=/home/peng/orfs-src/flow
+RTL=$HOME/flashattn_expmul/rtl
+F=$HOME/orfs-src/flow
 
 for VAR in base exp; do
   if [ "$VAR" = "base" ]; then PP=".VARIANT(0)"; else PP=".VARIANT(1)"; fi

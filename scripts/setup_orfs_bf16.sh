@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Install bf16 lane designs (base / exp) into ORFS.
 set -eu
-F=/home/peng/orfs-src/flow
-RTL=/home/peng/flashattn_expmul/rtl
+F=$HOME/orfs-src/flow
+RTL=$HOME/flashattn_expmul/rtl
 for V in b e; do
   if [ "$V" = "b" ]; then PP=".VARIANT(0)"; else PP=".VARIANT(1)"; fi
   SRC="$F/designs/src/fa_bf16_$V"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-F=/home/peng/orfs-src/flow
+F=$HOME/orfs-src/flow
 echo "== exp wrapper =="
 grep -n 'fa_lane #' $F/designs/src/fa_lane_exp/fa_lane_top.v
 echo "== base wrapper =="
