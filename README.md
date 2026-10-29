@@ -184,6 +184,37 @@ per-query detail); tool versions are listed in §2 of the notebook.
 
 ---
 
+## Use of AI assistants and of the OpenROAD toolchain
+
+**AI assistance.** This reproduction was produced with an AI coding assistant (a DeepSeek model
+running in the DeepSeek Harness agent environment). The assistant wrote the C++/Python/Verilog
+sources, the build, simulation and analysis scripts, the ORFS configurations and the plotting code,
+ran the sweeps, gate-level simulations and place-and-route jobs, and drafted this README and the
+report notebook. The human author defined the study, chose to evaluate both readings of Algorithm 3,
+reviewed every result, decided what is claimed, and is responsible for the contents.
+
+Machine-written artefacts are never trusted on assertion alone: the C++ operator is bit-exact
+against an independently written NumPy model on 100 000 vectors, the RTL multiplier/adder against
+NumPy on 4 000 vectors, and the RTL ExpMul on 5 000 vectors per mode. Every number in the tables is
+read from a committed file under `results/`, and every figure in the notebook is regenerated when
+the notebook runs.
+
+**Toolchain.** All hardware results were produced with
+[OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) (ORFS), the
+open-source RTL-to-GDS flow of the OpenROAD Project, on its `nangate45` platform (45 nm, 1.1 V):
+
+| Stage | Tool |
+|---|---|
+| Synthesis | Yosys 0.68 + ABC, mapped to the Nangate OpenCellLibrary |
+| Floorplan, placement, CTS, global/detailed routing, SPEF, reports | OpenROAD, driven by the ORFS `make` targets |
+| Switching-activity power | gate-level VCD (Icarus Verilog) annotated with `read_vcd` + `report_power`, together with the extracted SPEF |
+| GDS | written by the flow (`6_final.gds`), rendered with `gdstk` |
+
+The flow is driven from `scripts/setup_orfs_*.sh`, `scripts/gen_vcd*.sh` and `scripts/power_*.sh`;
+no commercial EDA tool was used at any point.
+
+---
+
 ## License and citation
 
 Released under the MIT License (see `LICENSE`). If you use this code, please cite the original
@@ -198,3 +229,7 @@ paper:
   year    = {2025}
 }
 ```
+
+**Tools.** [ORFS / OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+(Apache-2.0) · [Yosys](https://yosyshq.net/yosys/) (ISC) · [gdstk](https://github.com/heitzmann/gdstk)
+(BSL-1.0) · Icarus Verilog (GPL-2.0) · nangate45 open-cell library (academic use).
